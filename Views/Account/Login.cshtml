@@ -1,0 +1,42 @@
+﻿@model CaseStudy.Models.UsersRegistrationDetail
+
+@{
+    ViewBag.Title = "Login";
+}
+
+@using (@Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.Username, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.UserPassword, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.PasswordFor(model => model.UserPassword, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.UserPassword, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.UserType, "usertype", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @*@Html.DropDownListFor(model => model.UserType,new SelectList(Model.UserType1.UserDescription,"Text","Value",Model.UserType1.UserType))*@
+            @Html.DropDownListFor(model => model.UserType, new List<SelectListItem> { new SelectListItem { Text = "Admin", Value = "1" }, new SelectListItem { Text = "Manager", Value = "2" }, new SelectListItem { Text = "Customer", Value = "3" } }, "--Select User Type--", htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.UserType, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Login" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}

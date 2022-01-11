@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="60135be06b7c41acb950ea9b98e4ec67" Name="Diagram1">
+        <EntityTypeShape EntityType="CaseStudyModel.CustomerPolicyDetail" Width="1.5" PointX="7.5" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseStudyModel.InjuryType" Width="1.5" PointX="7.5" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseStudyModel.PolicyClaim" Width="1.5" PointX="9.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseStudyModel.PolicyCoverage" Width="1.5" PointX="7.5" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseStudyModel.PolicyDetail" Width="1.5" PointX="5.25" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseStudyModel.PremiumPayment" Width="1.5" PointX="5.25" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseStudyModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseStudyModel.UsersRegistrationDetail" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseStudyModel.UserType1" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <AssociationConnector Association="CaseStudyModel.FK__CustomerP__Polic__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseStudyModel.FK__CustomerP__UserI__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseStudyModel.FK__InjuryTyp__Polic__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseStudyModel.FK__PolicyCla__Injur__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseStudyModel.FK__PolicyCla__Regis__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseStudyModel.FK__PolicyCov__Polic__2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseStudyModel.FK__PolicyDet__UserI__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseStudyModel.FK__PremiumPa__Regis__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseStudyModel.FK__UsersRegi__UserT__267ABA7A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
